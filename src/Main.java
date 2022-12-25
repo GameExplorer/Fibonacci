@@ -1,8 +1,8 @@
 public class Main {
-    private static long[] fibonacciCache;
+    private static long[] fibonacciCache; 
 
     public static void main(String[] args) {
-        int n = 92;
+        int n = 92; //change n to any number
 
         fibonacciCache = new long[n+1];
 
@@ -22,7 +22,7 @@ public class Main {
             return fibonacciCache[n];
         }
 
-        long nthFibonacciNumber = (fibonacci(n - 1) + fibonacci(n - 2));
+        long nthFibonacciNumber = (fibonacci(n - 1) + fibonacci(n - 2)); //fibonacci sequence formula
         fibonacciCache[n] = nthFibonacciNumber;
         return nthFibonacciNumber;
     }
